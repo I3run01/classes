@@ -1,0 +1,19 @@
+CONCLUIDO
+ ----Revisar MySQL----
+
+Falta Concluir
+
+Estudar NodeJS
+
+Estudar PHP com MySQL
+
+Fazer desafio -
+	tela de cadastro 
+		-login
+		-senha
+	pegar informações de usuário
+
+
+Estudar API com Python
+
+

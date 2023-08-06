@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        p {
+            font-size: 2em;
+        }
+        .container {
+            width: 120px;
+            height: 200px;
+            text-align: center;
+            background-color: blue;
+            font-size: 2em;
+
+            /* Configuração Flexbod*/
+            display: flex;
+        }
+
+        .container_reverse {
+            width: 10px;
+            height: 200px;
+            width: 120px;
+            font-size: 2em;
+            background-color: blue;
+
+            /* Configuração Flexbod*/
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .container_Column {
+            width: 10px;
+            height: 200px;
+            width: 120px;
+            font-size: 2em;
+            background-color: blue;
+
+            /* Configuração Flexbod*/
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container_Column_reverse{
+            width: 10px;
+            height: 200px;
+            width: 120px;
+            font-size: 2em;
+            background-color: blue;
+
+            /* Configuração Flexbod*/
+            display: flex;
+            flex-direction:column-reverse;
+
+        }
+
+        .red {
+            margin: 10px;
+            background-color: red;
+        }
+
+        .green {
+            margin: 10px;
+            background-color: green;
+        }
+
+        .yellow {
+            margin: 10px;
+            background-color: yellow;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p>display: Flex</p>
+    <section class="container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+    </section>
+    <p>Flex-direction: Row-reverse</p>
+    <section class="container_reverse">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+    </section>
+    <p>Flex-direction: Column</p>
+    <section class="container_Column">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+    </section>
+    <p>Flex direction: Column-reverse</p>
+    <section class="container_Column_reverse">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        p {
+            font-size: 2em;
+        }
+        .container {
+            width: 120px;
+            height: 200px;
+            text-align: center;
+            background-color: blue;
+            font-size: 2em;
+
+            /* Configuração Flexbod*/
+            display: flex;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .red {
+            margin: 10px;
+            background-color: red;
+        }
+
+        .green {
+            margin: 10px;
+            background-color: green;
+        }
+
+        .yellow {
+            margin: 10px;
+            background-color: yellow;
+        }
+
+        .purple {
+            margin: 10px;
+            background-color: purple;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p>display: Flex</p>
+    <p>frex-wrap: nowrap</p>
+    <section class="container nowrap">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>frex-wrap: wrap</p>
+    <section class="container wrap">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>frex-wrap: wrap-reverse</p>
+    <section class="container wrap-reverse">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+
+
+</html>

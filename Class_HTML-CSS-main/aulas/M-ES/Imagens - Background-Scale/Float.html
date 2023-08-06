@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        main {
+            max-width: 900px;
+            font-size: 1.5em;
+            text-align: center;
+            margin: auto;
+        }
+
+        /*Colocanto float na imagem, porém a imagem vem antes no html que o texto*/
+        #floatR {
+            width: 60%;
+            float: right;
+        }
+
+        /*alinhando o float pelo texto, podendo a imagem vir depois no html*/
+        #floatL {
+            width: 350px;
+            float: left;
+        }
+
+        section>div>img {
+            width: 50%;
+        }
+
+        section {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo deleniti fugit autem at culpa officiis inventore aliquid eum ad, dignissimos aut dolorum unde pariatur suscipit doloribus tempore aliquam assumenda.</p>
+
+            <!--figure serve para a iamgem não escapar na hora que eu fizer o float. -->
+            <figure >
+                <img id="floatR" src="imagens/pexels-aaditya-arora-592753.jpg" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum architecto saepe, vitae assumenda quas omnis. Saepe, officiis laboriosam impedit iste ab mollitia reiciendis maiores minima delectus, dicta libero debitis?<p>
+        </section>
+        <section>
+
+            <!--figure serve para a iamgem não escapar na hora que eu fizer o float. -->
+            <figure id="floatL">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellendus maxime cumque repudiandae laudantium qui ad, nesciunt consequuntur beatae tempora, eligendi facilis voluptatibus distinctio sequi enim dolore modi ullam obcaecati!
+                </p>
+            </figure>
+            <div>
+                <br>
+                <br>
+                <img src="imagens/pexels-pixabay-41949.jpg" alt="">
+            </div>
+        </section> 
+    </main>
+</body>
+</html>

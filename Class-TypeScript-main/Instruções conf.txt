@@ -1,0 +1,16 @@
+"Exclude" -> posso colocar os documentos que não serão compilados
+"Include" -> Os documentos que serão compilados
+
+--Lib -> bibliotecas para o TypeScript -> *Não mexa*
+
+-> OutDir/rootDir -> local que vamos salvar os documentos
+    Video -eng-USA: https://www.youtube.com/watch?v=Y4IiQY9dNRA
+
+-> noEmitOnError: true: Não salva se tiver com erro
+-> "removeComments": true, : Remove os comentários do meu arquivo original
+
+-> "noUnusedLocals": true -> mostra as variáveis locais que eu não esteja usando
+
+-> "noUnusedParameters": true -> Mostra os parametros que eu não esteja usando
+
+->"noImplicitReturns": true, -> Implica que sua função tenha um retorno declarado

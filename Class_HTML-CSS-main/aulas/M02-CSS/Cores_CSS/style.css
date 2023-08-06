@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Selecionar tudo*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*criando minhas biblioteca de cores*/
+:root {
+    --CorFundo: rgba(102, 255, 0, 0.315);
+    --CorTexto: rgb(255, 0, 221);
+}
+
+
+/*Degrade*/
+body {
+    background-image: linear-gradient(to right, #C8CECE, #E2D6C6, #8D9F8F);
+}
+
+/*Cor de fundo*/
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5x 10px #002e30;
+}
+
+p {
+    text-align: justify;
+    color: var(--CorTexto);
+}
+
+/*Cor de texto*/
+h1 {
+    color: #D59567;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+}
+
+
+

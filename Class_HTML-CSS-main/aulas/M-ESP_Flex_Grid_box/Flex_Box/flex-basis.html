@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        * {
+            font-size: 1.1em;
+        }
+
+        .container {
+            width: 600px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sub {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+        
+        .flex-grow-0 {
+            flex-grow: 0;
+        }
+
+        .flex-basis-auto {
+            flex-basis: auto;
+        }
+
+        .flex-basis-0 {
+            flex-basis: 0;
+        }
+
+        .flex-basis-numero {
+            flex-basis: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-basis: auto</p>
+    <div class="container">
+        <div class="sub flex-basis-auto flex-grow-1">1</div>
+        <div class="sub flex-basis-auto flex-grow-1">2 3 4</div>
+        <div class="sub flex-basis-auto flex-grow-1">5 6 7 8 9</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-basis: 0</p>
+    <div class="container">
+        <div class="sub flex-basis-0 flex-grow-1">1</div>
+        <div class="sub flex-basis-0 flex-grow-1">2 3 4</div>
+        <div class="sub flex-basis-0 flex-grow-1">5 6 7 8 9</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-basis: numero</p>
+    <div class="container">
+        <div class="sub flex-basis-numero flex-grow-1">1</div>
+        <div class="sub flex-basis-numero flex-grow-1">2 3 4</div>
+        <div class="sub flex-basis-numero flex-grow-1">5 6 7 8 9</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: 0;</p>
+    <p>flex-basis: numero</p>
+    <div class="container">
+        <div class="sub flex-basis-numero flex-grow-0">1</div>
+        <div class="sub flex-basis-numero flex-grow-0">2 3 4</div>
+        <div class="sub flex-basis-numero flex-grow-0">5 6 7 8 9</div>
+    </div>
+
+</body>
+</body>
+</html>

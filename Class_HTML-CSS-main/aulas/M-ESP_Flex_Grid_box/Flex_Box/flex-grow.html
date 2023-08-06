@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <style>
+        * {
+            font-size: 1.1em;
+        }
+
+        .container {
+            width: 600px;
+            background-color: black;
+            display: flex;
+        }
+
+        .sub {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .width {
+            width: 150px;
+        }
+        
+        .flex-grow-0 {
+            flex-grow: 0;
+        }
+
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        .flex-grow-3 {
+            flex-grow: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: 0</p>
+    <div class="container">
+        <div class="sub flex-grow-0 ">1</div>
+        <div class="sub flex-grow-0">2</div>
+        <div class="sub flex-grow-0">3</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: 1</p>
+    <div class="container">
+        <div class="sub flex-grow-1">1</div>
+        <div class="sub flex-grow-1">2</div>
+        <div class="sub flex-grow-1">3</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: 1 conteúdo largo</p>
+    <div class="container">
+        <div class="sub flex-grow-1">1</div>
+        <div class="sub flex-grow-1">1 ajhVFdgh 2 dfFAEFAF  FQF</div>
+        <div class="sub flex-grow-1">3</div>
+    </div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: misturado</p>
+    <div class="container">
+        <div class="sub flex-grow-1">1</div>
+        <div class="sub flex-grow-2">2</div>
+        <div class="sub flex-grow-3">3</div>
+    </div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex-grow: misturado</p>
+    <p>flex-wrap: wrap e width: 150px;</p>
+
+    <div class="container wrap">
+        <div class="sub flex-grow-1 width ">1</div>
+        <div class="sub flex-grow-1 width">2</div>
+        <div class="sub flex-grow-1 width">3</div>
+        <div class="sub flex-grow-1 width">4</div>
+    </div>
+    
+</body>
+</body>
+</html>

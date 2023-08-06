@@ -1,0 +1,19 @@
+No terminal do arquivo Para mudar o arquivo JS em tempo real:
+1º: Configuraçõs TS: No terminal:
+	$ npm install -g typescript
+	$ npm install typescript-compiler
+    	$ tsc --init
+
+Terminal -> WatchMode : Compila e fica salvando no JS
+    WatchMode para todo o projeto: $ tsc -w
+    WatchMode Para um projeto específico: $ tsc {nome_do_projeto} -w
+
+Compilar sem WatchMode:
+    Projeto todo: tsc
+    Projeto específico: $ tsc {Nome_do_projeto}
+
+
+    
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+
+        /*No CSS a hierarquia é invertida, ele tenta primeiro  o último @, depois tenta o primeiro*/
+        main {
+            max-width: 800px;
+            font-size: 2em;
+            margin: auto; 
+            text-align: center;
+            background-color: rgb(182, 255, 255);
+        }  
+        
+
+        @media(max-width: 1200px){
+            main {
+                background-color: rgb(243, 243, 151);
+            }
+        }
+
+        @media(max-width: 600px){
+            main {
+                background-color: rgb(207, 255, 209);
+             }
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti impedit et deserunt vero. Vel, ipsum illo eius saepe distinctio commodi debitis voluptatum tempora accusamus natus dolorem quod exercitationem odit ut?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, blanditiis? Dignissimos deleniti rem dolores ut dolor, reiciendis eum cumque eius incidunt est tenetur excepturi impedit officiis consectetur consequuntur aspernatur veritatis?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ab officia quis inventore! Harum ullam quam non quaerat, eveniet adipisci aperiam, temporibus laborum debitis porro iure unde error vitae voluptatem!</p>
+        
+    </main>
+    
+</body>
+</html>

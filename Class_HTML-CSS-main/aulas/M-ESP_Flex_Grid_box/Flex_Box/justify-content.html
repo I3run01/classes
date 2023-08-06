@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        p {
+            font-size: 2em;
+        }
+        .container {
+            width: 500px;
+            text-align: center;
+            background-color: blue;
+            font-size: 2em;
+
+            /* Configuração Flexbod*/
+            display: flex;
+        }
+
+        .justify_content_start {
+            justify-content: flex-start;
+        }
+
+        .justify_content_end {
+            justify-content: flex-end;
+        }
+
+        .justify_content_center {
+            justify-content: center;
+        }
+
+        .justify_content_space_between {
+            justify-content: space-between;
+        }
+        
+        .justify_content_space_around {
+            justify-content: space-around;
+        }
+
+        .justify_content_space_around_flex1 {
+            flex: 1;
+            justify-content: space-around;
+        }
+
+        .direction_columns {
+            flex-direction: column;
+            height: 400px;
+        }
+        .red {
+            margin: 10px;
+            background-color: red;
+        }
+
+        .green {
+            margin: 10px;
+            background-color: green;
+        }
+
+        .yellow {
+            margin: 10px;
+            background-color: yellow;
+        }
+
+        .purple {
+            margin: 10px;
+            background-color: purple;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p>display: Flex</p>
+    <p>justify-content: flex-start;</p>
+    <section class="container justify_content_start">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-end;</p>
+    <section class="container justify_content_end">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-center;</p>
+    <section class="container justify_content_center">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-space-between;</p>
+    <section class="container justify_content_space_between">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-around;</p>
+    <section class="container justify_content_space_around">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-around;</p>
+    <p>flex: 1;</p>
+    <section class="container justify_content_space_around_flex1">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+
+    <p>flex-direction: columns;</p>
+
+    <p>display: Flex</p>
+    <p>justify-content: flex-start;</p>
+    <section class="container justify_content_start direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-end;</p>
+    <section class="container justify_content_end direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-center;</p>
+    <section class="container justify_content_center direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-space-between;</p>
+    <section class="container justify_content_space_between direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-around;</p>
+    <section class="container justify_content_space_around direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    <p>display: Flex</p>
+    <p>justify-content: flex-around;</p>
+    <p>flex: 1;</p>
+    <section class="container justify_content_space_around_flex1 direction_columns">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="yellow">3</div>
+        <div class="purple">4</div>
+    </section>
+    
+</html>

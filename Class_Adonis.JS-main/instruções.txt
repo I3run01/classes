@@ -1,0 +1,61 @@
+Instações iniciais:
+	No VS Code extensions, instalar:
+		Adonis JS Goto View
+		Adonis JS Goto Controller
+		Edge Template support
+
+	No google Chrome extension:
+		JSON Viewer
+
+	Para baixar o AdonisJS
+		npm init adonis-ts-app@latest 'nome do projeto'
+
+Biblioteca autoComplete AdonisJS
+	import Env from '@ioc:Adonis/Core/Env'
+
+Observaçãoe sobre o Env.
+	Quando for colocar mais alguma variável no .Env, Tem que colocar no env.ts
+
+
+Comando para o Node ACE:
+
+	Para ver os comandos no node ace no terminal:
+		node ace
+
+	Para ver todas as suas rotas:
+		node ace list:routes
+
+	Para ver a versão do ace:
+		node ace -v
+
+Se for separar as rotas de view das de api
+	Na pasta 'start' você cria a seguinte para 
+		api.router.ts
+
+	OP 1.
+		Para poder acessar essas rotas, vai em:
+			adonissrc.json -> "preloads": coloque = "./start/api.routes"
+	OP 2.
+		Em start/routes.t:
+			import './api.routes'
+
+Para trabalhar com bancos de dados. Instale: 
+	npm i @adonisjs/lucid
+
+	Para configurar o banco de dados, digite o seguinte comando:
+		node ace invoke @adonisjs/lucid
+		
+		Selecione o bd. -> Copie para o Env as informações em:
+			Open the env.ts file and paste the following code inside the Env.rules object.
+			Variables for the MYSQL driver
+
+
+		OBS: use o 'espaço' para selecionar o banco e depois 'enter'
+		
+
+
+
+
+***Para rodar o servidor:
+	npm run dev
+		        

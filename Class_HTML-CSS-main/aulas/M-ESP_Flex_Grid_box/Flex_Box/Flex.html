@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            font-size: 1.1em;
+        }
+
+        .container {
+            width: 600px;
+            background-color: black;
+            display: flex;
+        }
+
+        .sub {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+        }
+
+        .flex01 {
+            flex: 1;
+
+        }
+
+        .flex-g-s-b {
+            flex: 1 1 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex: 1;</p>
+    <div class="container">
+        <div class="sub flex01">1</div>
+        <div class="sub flex01">2 3 4</div>
+        <div class="sub flex01">5 6 7 8 9</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>flex: grow shrink basis - 1  - 1 - auto;</p>
+    <div class="container">
+        <div class="sub flex-g-s-b">1</div>
+        <div class="sub flex-g-s-b">2 3 4</div>
+        <div class="sub flex-g-s-b">5 6 7 8 9</div>
+    </div>
+    
+</body>
+</body>
+</html>

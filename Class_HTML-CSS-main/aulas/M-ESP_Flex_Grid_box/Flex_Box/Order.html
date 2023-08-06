@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        * {
+            font-size: 1.1em;
+        }
+
+        .container {
+            width: 600px;
+            background-color: black;
+            display: flex;
+        }
+
+        .sub {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+            flex: 1;
+        }
+
+        .order00 {
+            order: 0;
+        }
+
+        .order01 {
+            order: 1;
+        }
+
+        .order02 {
+            order: 2;
+        }
+
+        .order03 {
+            order: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>sem a class: order;</p>
+    <div class="container">
+        <div class="sub ">2</div>
+        <div class="sub ">1</div>
+        <div class="sub ">3</div>
+        <div class="sub ">0</div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>com a class: order;</p>
+    <div class="container">
+        <div class="sub order02">2</div>
+        <div class="sub order01">1</div>
+        <div class="sub order03">3</div>
+        <div class="sub order00">0</div>
+    </div>
+
+
+    
+</body>
+</body>
+</html>

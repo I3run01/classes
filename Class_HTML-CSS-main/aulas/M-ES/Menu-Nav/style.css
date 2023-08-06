@@ -1,0 +1,151 @@
+@charset "UTF-08";
+
+/*configuração para telas pequenas*/
+@media(max-width: 800px){ 
+    #navpai {
+        height: 25px;
+        background-color: black;
+        padding: 25px;
+        text-align: right;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: +10;
+
+    }
+
+    #navmobile {
+        margin-top: 0%;
+        margin-bottom: 100px;
+    }
+
+    #navmobile > a {
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        margin: 0px;
+        font-size: 1.2em;
+        transition: all 0.5s;
+    }
+    #navmobile > a > img {
+        width: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #navmobile>a>img:hover {
+        transform: scale(90%);
+    }
+
+    #navfilha {
+        display: none;
+    }
+
+    #navfilhamobile {
+        display: none;
+    }
+
+    #navmobile:hover>#navfilhamobile{
+        display: block;
+    }
+
+    
+    #navfilhamobile {
+        background-color: rgb(0, 0, 0);
+        top: 70px;
+        right: 0px;
+        position: fixed;
+        box-shadow: 2px 2px 2px black;      
+        
+    }
+
+    #navfilhamobile>ul>li{
+        list-style: none;
+    }
+
+    #navfilhamobile>ul{
+        padding: 0%;
+    }
+
+    #navfilhamobile>ul>li>a {
+        color: white;
+        line-height: 4em;
+        text-decoration: none;
+        text-align: right;
+        margin: 0px;
+        font-size: 1.2em;
+        padding: 25px;
+        transition: all 0.5s;
+
+    }
+    
+    #navpai>img {
+        left: 20px;
+        top: 10px;
+        position: absolute;
+        height: 50%;
+    }
+    
+    #navfilhamobile>ul>li>a:hover {
+        background-color: rgba(128, 128, 128, 0.432);
+    }
+
+}
+
+/*configuração para telas grandes*/
+@media(min-width: 800px){
+    #navmobile {
+        display: none;
+    }
+
+    #navfilhamobile {
+        display: none;
+    }
+    
+    #navpai {
+        height: 25px;
+        background-color: black;
+        padding: 25px;
+        text-align: right;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: +10;
+        
+
+    }
+    
+    #navfilha > a {
+        color: white;
+        text-decoration: none;
+        margin: 0px;
+        font-size: 1.2em;
+        padding: 25px;
+        transition: all 0.5s;
+    }
+    
+    #navpai>img {
+        left: 20px;
+        top: 10px;
+        position: absolute;
+        height: 50%;
+    }
+    
+    #navfilha>a:hover {
+        background-color: rgba(128, 128, 128, 0.432) ;
+    }
+
+}
+
+/*configuração de texto*/
+main {
+    max-width: 800px;
+    font-size: 1.5em;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}

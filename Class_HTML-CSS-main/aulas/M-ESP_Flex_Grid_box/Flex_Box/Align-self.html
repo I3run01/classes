@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Self</title>
+    <style>
+        * {
+            font-size: 1.1em;
+        }
+
+        .container {
+            height: 400px;
+            width: 600px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .align-item-end {
+            align-items: flex-end;
+        }
+
+        .align-item-start {
+            align-items: flex-start;
+        }
+
+        .sub {
+            height: fit-content;
+            width: 150px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            background-color: green;
+
+        }
+
+        .align-self-start {
+            align-self: flex-start;
+        }
+
+        .align-self-end {
+            align-self: flex-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>container -> align-items: align-item-end</p>
+    <p>div02-> align-self: align-self-start</p>>
+    <div class="container align-item-end">
+        <div class="sub ">1 </div>
+        <div class="sub align-self-start ">2 2 2 2 2</div>
+        <div class="sub ">5 6 7 8 9 3 4 6 8 2 q e </div>
+    </div>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>container -> align-items: align-item-start</p>
+    <p>div02-> align-self: align-self-end</p>
+    <div class="container align-item-start">
+        <div class="sub ">1 </div>
+        <div class="sub align-self-end ">2 2 2 2 2</div>
+        <div class="sub ">5 6 7 8 9 3 4 6 8 2 q e </div>
+    </div>
+
+</body>
+</body>
+</html>

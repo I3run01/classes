@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        * {
+            font-size: 1.2em;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sub {
+            width: 120px;
+            margin: 10px;
+            background-color: green;
+
+        }
+
+        .column { 
+            flex-direction: column;
+        }
+
+        .stretch {
+            align-content: stretch;
+
+        }
+
+        .start {
+            align-content: start;
+
+        }
+
+        .end {
+            align-content: end;
+
+        }
+        .center {
+            align-content: center;
+
+        }
+
+        .between {
+            align-content: space-between;
+        }
+
+        .around {
+            align-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: stretch</p>
+    <div class="container stretch">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: start</p>
+    <div class="container start">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: end</p>
+    <div class="container end">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: center</p>
+    <div class="container center">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: space-between</p>
+    <div class="container between">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: space-around</p>
+    <div class="container around">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>COLUMNS</p>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: stretch</p>
+    <div class="container stretch column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: start</p>
+    <div class="container start column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: end</p>
+    <div class="container end column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: center</p>
+    <div class="container center column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: center</p>
+    <div class="container center column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: space-between</p>
+    <div class="container between column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    <p>-----------------------------------------</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row;</p>
+    <p>align-content: space-around</p>
+    <div class="container around column">
+        <div class="sub">aff afaf aF AFaf</div>
+        <div class="sub">aff afafa FA Faf</div>
+        <div class="sub">af fa fWTW TW TWT Waf aFAFaf</div>
+        <div class="sub">a fa AF af</div>
+        <div class="sub">af FA Faf</div>
+        <div class="sub">afa FAF af</div>
+        <div class="sub">af aFA Faf</div>
+        <div class="sub">af aFAF af</div>
+    </div>
+    
+</body>
+</body>
+</html>
