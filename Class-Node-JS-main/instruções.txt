@@ -1,0 +1,191 @@
+Softwares e bilbliotecas
+	Instalar pelo site:
+    	https://nodejs.org/en/download/
+
+	Instalar a seguinte exnsão no VS Code
+   	 Node.js Exec
+
+Criar uma API
+	Instalar typescript: Termial
+    		$ npm install typescript -g --save
+		$ npm install typescript-compiler
+
+	Configuração do typescript no projeto: Terminal
+    		$ tsc --init
+
+	Em tsconfig
+		Adicionar em modulos
+		"moduleResolution": "node",
+
+    	Habilite o 
+       		"outDir": "./dist",
+        	"rootDir" "./src"
+    
+	Instale a seguinte biblioteca //Criar a estrutura do node
+    	$ npm install --save @types/node
+
+
+	Instalar o package.json: No terminal
+    	$ npm init -y
+
+	Instale a biblioteca nodemon globalmente: No terminal
+    	$ npm install -g nodemon -g ts-node
+
+	Instale o Express -- Serve para criar um servidor
+		$ npm install express --save @types/express
+
+	Instalar o dotenv : Serve para configuração de porta
+    	$ npm install dotenv --save
+
+	Instalar o Sequelize : Serve para com promise e Bancos de dados
+    	$ npm install --save sequelize
+
+	Cors -> Para criação de API
+    	$ npm install cors -d @types/cors
+
+	Crie o arquivos src e o que tem dentro
+	
+	Terminal ->digite: 
+		$ tsc -w
+
+	Em package.json -> script -> coloque:
+		"start": "node dist/server"
+
+	Status de retorno de API:
+    	https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+Concectar com bancos de dados
+	Instalar o MySQL dentro do script
+    		$ npm install mysql2
+
+	MongoDB:
+		Para trabalhar com noSQL
+   			baixe e instale o mongodb: 
+				https://www.mongodb.com/try/download/community
+    			baixe e instale o mondodb compass: 
+				https://www.mongodb.com/try/download/compass
+			Baixe o Monngose para poder se conectar ao mondodb:
+    				$ npm install mongoose @types/mongoose D
+
+Biclioteca para validação de login, senhas, segurança:
+	Instalar o Passport -> Serve para realizar as verificações de login
+		$ npm install passport
+		$ npm install -D @types/passport
+		$ npm install passport-http
+		$ npm install -D @types/passport-http
+		$ npm install passport-jwt jsonwebtoken
+		$ npm install -D @types/passport-jwt @types/jsonwebtoken
+	
+	Biclioteca para cryptografar senhas:
+		$ npm install bcrypt @types/bcrypt
+
+Programa full stack
+	Baixe o mustache para tralhar com a view no Node
+			$ npm  install mustache-express --save-dev @types/mustache-express
+
+			Baixe a extensão:
+				Mustache Syntax
+				Mustache Template - Snippets & Autocom
+
+Testa API´s
+	Para testar as APi's
+    	https://web.postman.co
+
+Bibliotecas adicionais no Node.JS
+	Biblioteca para Upload -> Multer
+		$ npm install multer
+		$ npm install -D @types/multer
+
+	Biblioteca para manipulação de imagens -> Sharp
+		$ npm install sharp
+		$ npm install -D @types/sharp
+
+	Biblioteca para JST -> acesso de usuário
+		$ npm install jsonwebtoken
+		$ npm install -D @types/jsonwebtoken
+
+	Biblioteca para envio de email
+		$ npm install nodemailer
+		$ npm install -D @types/nodemailer
+
+	Biblioteca de sockets
+		$ npm install socket.io
+
+Biblioteca para testes:
+	Instalar o Jest -> Biblioteca para realiar testes
+    	$ npm install -D jest ts-jest @types/jest
+    	$ npx ts-jest config:init //muda a configuração dos arquivos
+
+    Em jest.config.js -> coloque o seguinte comando:
+        detectOpenHandles: true
+
+    Em package.josn -> script : Habilite o seguinte comando
+        "test": "set NODE_ENV=test& jest --runInBand",
+	    "test:e2e": "jest --config ./test/jest-e2e.json --forceExit",
+
+	Biblioteca para fazer testes com requisições 
+		$ npm install -D supertest @types/supertest
+	
+	*Rodar os testes do sistema
+    	$ npm test
+
+*Rodar o arquivo: Terminal
+    nodemon -e ts,json,mustache src/server.ts
+
+    Para criar um atalho do comando nodemon:
+    No package.json-> script -> Coloque:
+        "dev": "comando-para rodar no terminal"
+
+        Para rodar o comando: No terminal:
+            npm run start-dev
+
+*Deploy no Heroku
+	Terminal ->digite: 
+		$ tsc -w
+	Em Packge.json: 
+		"start": "node dist/server" 
+		//*OBS->(dist/server é o local do servidor em JS, se for outro local, mudar dai)*
+
+	Cria um app no heroku:
+		https://dashboard.heroku.com -> Github connection to github -> selecione o seu repositório ->Enable automatic deploys -> Manual deploy: deploy branch
+
+*Deploy na AWS:
+	video-explicativo: https://www.youtube.com/watch?v=S4kckDjU1Zk&t=403s
+
+	Resumo: Usa-se:
+		Elastic Beanstalk.
+		Code-pipeline
+
+	Mudar http para https: https://medium.com/@j_cunanan05/how-to-redirect-http-to-https-in-amazon-web-services-aws-elastic-beanstalk-67f309734e81
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

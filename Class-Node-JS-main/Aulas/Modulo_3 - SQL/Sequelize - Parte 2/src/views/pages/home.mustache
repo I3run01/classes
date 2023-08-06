@@ -1,0 +1,27 @@
+{{>partials/header}}
+
+    <hr>
+    <h2>Dados do bd</h2>
+    <ul>
+        {{# user }}
+            <li> {{id}} -  {{nome}} - {{idade}} </li>
+        {{/ user }}
+    </ul>
+
+    <hr>
+    <h2>Pegando dados por ordem alfabetica</h2>
+    <ul>
+        {{# user02 }}
+            <li> {{id}} - {{nome}} - {{idade}} </li>
+        {{/ user02 }}
+    </ul>
+
+    <hr>
+    <h2>Pegando dados por ordem alfabetica decrescente</h2>
+    <ul>
+        {{# user03 }}
+            <li>{{id}} - {{nome}} - {{idade}} </li>
+        {{/ user03 }}
+    </ul>
+
+{{>partials/footer}}

@@ -1,0 +1,23 @@
+- O que é Api:
+-- Application Programming Interface
+
+- webservices
+
+-Rest -> Teoria
+--Representational State Transfer
+
+-Restful -> Sistema
+________________________________________________
+
+GET https://meusite.com.br/api/users
+GET https://meusite.com.br/api/users/10
+GET -> pegar
+
+PUT https://meusite.com.br/api/users/10 (name: 'bonieky', age: 90)
+PUT atualizar usário
+
+POST https://meusite.com.br/api/users/10 (name: 'bonieky', age: 90)
+criar usuário e colocar alguma nova informação
+
+DELETE https://meusite.com.br/api/users/10
+DELETE -> deletar
