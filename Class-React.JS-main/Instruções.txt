@@ -1,0 +1,106 @@
+Para usar o CRA:
+    Passos iniciais n terminal:
+        npx create-react-app my-app
+        cd my-app
+        npm start //Abre o projeto
+
+Para usar o Vite:
+    Depois limpe o terminal e rode os seguinte comandos:
+        npm init vite react-vite -- --template react-ts
+        cd react-vite
+        npm install
+        npm run dev //Abre o projeto
+
+Bibliotecas de estilos:
+	Biblioteca para styles components
+		npm install --save styled-components -D @types/styled-components
+
+	Baixe e instale a seguinte extensão para ter o auto-complete
+		vscode-styled-components
+
+Deploy no Netlify
+	No terminal do projeto:
+		npm run build
+
+	No netlify: 
+		add new site -> importing an existing project -> GitHub -> escolha o projeto
+
+	Em Build command:
+		npm run build
+
+	Em Publish directory:
+		dist
+	
+	Depois clique em:
+		deploy site
+
+Deploy na AWS amplify
+	coloque em package.json -> devDependencies:
+		"@testing-library/react": "^13.3.0",
+    		"@testing-library/user-event": "^14.4.3",
+    		"@types/jest": "^28.1.7",
+		"jest": "^28.1.3",
+		"ts-jest": "^28.0.8",
+
+	instruções do deploy em inglês:
+		https://towardsdatascience.com/how-to-use-aws-amplify-to-deploy-a-react-application-ae93cd6e4525
+			* na parte de configuração de script, troque: "baseDirectory: build" para: "baseDirectory: dist"
+
+React Router (v6)
+	para instalar:
+		npm install --save react-router-dom
+
+	Em main.tsx: Faça a seguinte importação:
+		import { BrowserRouter } from "react-router-dom"
+
+	Substituia o "<App />" por :
+		<BrowserRouter>
+      			<App />
+    		</BrowserRouter>
+
+Contaxt API com Reducer
+	Em main.tsx: Faça aS seguinteS importação:
+		import { ContextProvider } from './contexts/Context'
+
+	Substituia o "<App />" por :
+		<ContextProvider>
+      			<App />
+		</ContextProvider>
+
+Para usar o Redux:
+	npm install redux react-redux @reduxjs/toolkit
+	npm install -D @types/react-redux
+	
+	*Imports
+
+	import { Provider } from 'react-redux'
+	import {store} from './redux/store'
+	
+	//o store é um arquivo que se cria dentro da pasta redux
+
+	Em mains.ts -> Substituia o "<App />" por :
+		<Provider store={store} >
+        		<App />
+      		</Provider>
+
+Biblioteca para testes:
+	Se criar em CRA, não precisa instalar nada, mas se criar em Vite, siga o seguint tutorial:
+		https://codingwithmanny.medium.com/quick-jest-setup-with-vitejs-react-typescript-82f325e4323f
+	Rodar Teste:
+		npm run test
+
+Library to make some scroll animation
+	site: https://michalsnik.github.io/aos/
+
+	to install: npm install --save aos@nex
+
+
+
+
+
+
+----------------------
+OBS: Use o Vite
+
+Para rodar o servidor:
+	npm run dev

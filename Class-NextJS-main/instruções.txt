@@ -1,0 +1,120 @@
+Pré requisitos
+ - Node 12.22 (ou maior)
+ - MacOS, Windows (com ou sem WSL), Linux
+
+Instalação no NextJS
+    $ npx create-next-app --typescript
+
+Rotas
+    //As rotas são criadas a partir de páginas, que partem da página src/pages
+
+    1º Crie a pagina "pages" dentro da página "scr"
+
+    Rotas estáticas.
+        Exemplo, rota -> /sobre
+            cria a seguinte pasta:
+                # src/pages/sobre
+
+                Dentro desta pasta, crie o seguinte arquivo
+                    @ index.tsx
+        
+        Exmplo, rota -> /sobre/joao
+            cria a seguinte pasta:
+                # src/pages/sobre/joao
+
+                Dentro desta pasta, crie o seguinte arquivo
+                    @ index.tsx
+
+    Rotas dinâmicas.
+	a pasta ou arquivo que tenha a rota dinâmica, tem que estar entre módulo
+		exemplo: [slug]
+		exemplo: [id]
+
+	exemplo de rota dinâmica, sendo dinâmico aquilo que vier depoisdo sobre
+		/sobre/joão
+		/sobre/pedro
+
+		cria a seguinte pasta:
+			# src/pages/[slug]
+
+		Você pode continuar com a rota mesmo depois da rota dinâmica
+			# src/pages/[slug]/mari
+
+		
+		Para pegar a rota dinâmica, você pode usar o useRouter, dentro do arquivo, exemplo:
+			import { useRouter } from "next/router"
+
+			Dentro da função, coloque:
+				const router = useRouter()
+    				const {slug} = router.query
+			
+			Dentro do return, pode usar {slug} para mostrar a variável:
+				return (
+        				<div>
+            					Rota dinâmina e depois Mari e {slug}
+        				</div>
+    				)
+
+Funcionamento de Client-side e Server-side no NextJS
+	- Client-side
+		- lado do cliente
+		- A onde você acessa
+
+	- Server-sive
+		- Lado do servidor
+		- De onde vem a informação
+
+	O servivor já manda a página pronta pata o navegador, mas mesmo depois que a página chega no navegador, ela continua funcionando
+
+CSR - SSR - SSG
+	CSR = Client-Side Rendering
+		Renderiza no lado do cliente
+
+	SSR = Server-side Rendering
+		Renderia no lado do servidor e manda para o cliente
+
+	SSG = Static-site Generation
+		Na build, ele gera as páginas importantes
+		Na build, gera páginas estáticas das páginas dinâmicas
+
+Layout
+	Layout único:
+		Você cria o layout no componente e depois import o layout na página _app.tsx:
+			import Layout from '../components/layout'
+			import '@/styles/globals.css'
+			import type { AppProps } from 'next/app'
+
+			export default function App({ Component, pageProps }: AppProps) {
+				return (
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				)
+			}
+
+	Layout por página:
+		NÂO muda o import:
+			import '@/styles/globals.css'
+			import type { AppProps } from 'next/app'
+
+			export default function App({ Component, pageProps }: AppProps) {
+				return <Component {...pageProps} />
+			}
+		
+		Você importa o Layout nas páginas em que vão ser usadas: ex:
+			import Layout from '../components/layout'
+
+			const mainPage = () => {
+
+				return (
+					<>
+						<h1>Texto da página main</h1>
+					</>
+				)
+			}
+
+export default mainPage
+
+
+*Rodar projeto
+    $ npm run dev
