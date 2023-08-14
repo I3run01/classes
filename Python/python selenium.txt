@@ -1,0 +1,10 @@
+install Selenium in yout PC:
+	pip install selenium
+
+download chrome driver in pc:
+	https://sites.google.com/chromium.org/driver/downloads
+
+-Save the chrome driver some where in your pc
+
+search for path
+	go to: enviroment variables -> enviroment variables -> path -> edit -> new -> save the path of the chrome driver
