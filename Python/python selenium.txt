@@ -8,3 +8,40 @@ download chrome driver in pc:
 
 search for path
 	go to: enviroment variables -> enviroment variables -> path -> edit -> new -> save the path of the chrome driver
+
+
+To use Selenium in the private windows:
+
+	Script:
+
+		driver = webdriver.Chrome()
+
+		driver.get("https://www.example.com")
+
+To use Selenium in a specif windows:
+	Script:
+
+	    	driver = webdriver.Chrome()
+
+    		chrome_options = webdriver.ChromeOptions()
+
+    		user_data_dir = r"C:\Users\User\AppData\Local\Google\Chrome\User Data"
+    		chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
+    
+    		driver = webdriver.Chrome(options=chrome_options)
+    		driver.get("https://www.google.com")
+
+	OBS: 
+		You can find the "user_data_dir" in the following chrome url: 
+			url = chrome://version/
+			
+			then, go to: "Caminho de perfil" or "Perfil path"
+
+			then copy the value until "User Data"
+
+		Ex: 
+			if the Perfil path is:	C:\Users\User\AppData\Local\Google\Chrome\User Data\Default
+
+			the "user_data_dir" will be "C:\Users\User\AppData\Local\Google\Chrome\User Data"
+
+
