@@ -39,7 +39,7 @@ To use Selenium in a specif windows:
 
 			then copy the value until "User Data"
 
-		Ex: 
+		Example: 
 			if the Perfil path is:	C:\Users\User\AppData\Local\Google\Chrome\User Data\Default
 
 			the "user_data_dir" will be "C:\Users\User\AppData\Local\Google\Chrome\User Data"
