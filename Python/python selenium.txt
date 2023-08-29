@@ -19,17 +19,23 @@ To use Selenium in the private windows:
 		driver.get("https://www.example.com")
 
 To use Selenium in a specif windows:
+
 	Script:
+		from selenium import webdriver
+		from webdriver_manager.chrome import ChromeDriverManager
+		from selenium.webdriver.chrome.service import Service
 
-	    	driver = webdriver.Chrome()
-
+	    	service = Service(ChromeDriverManager().install())
     		chrome_options = webdriver.ChromeOptions()
-
-    		user_data_dir = r"C:\Users\User\AppData\Local\Google\Chrome\User Data"
+    		user_data_dir = r"C:\Users\Bruno\AppData\Local\Google\Chrome\User Data"
     		chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
     
-    		driver = webdriver.Chrome(options=chrome_options)
+    		driver = webdriver.Chrome(options=chrome_options, service = service)
     		driver.get("https://www.google.com")
+    
+    		driver.save_screenshot("screenshot.png") # This line captures the screenshot and saves it as screenshot.png
+    
+    		driver.quit()
 
 	OBS: 
 		You can find the "user_data_dir" in the following chrome url: 
